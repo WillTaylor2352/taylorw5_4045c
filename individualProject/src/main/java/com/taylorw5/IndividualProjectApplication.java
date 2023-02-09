@@ -1,4 +1,4 @@
-package com.taylorw5.individualProject;
+package com.taylorw5;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
