@@ -23,21 +23,21 @@ public class IndividualProjectController {
 	// this is the code for the true index mapping. Kept separate intentionally to avoid confusion when starting the application
 	// 		for this assignment
 	
-//	@GetMapping("/")
-//	public String index() {
-//		return "index";
-//	}
+	@GetMapping("/")
+	public String index() {
+		return "index";
+	}
 
 	//------------------- start page mappings
 	
 	// this code defines the root html file, using it as the starting point of the application
 	// navigating to /start will produce the same HTML response and object data (though not necessarily the same object)
-	@GetMapping("/")
-	public String readStart(Model model) {
-		SpecimenDTO specimenDTO = specimenServiceStub.fetchByID(43);
-		model.addAttribute("specimenDTO", specimenDTO);
-		return "start";
-	}
+//	@GetMapping("/")
+//	public String readStart(Model model) {
+//		SpecimenDTO specimenDTO = specimenServiceStub.fetchByID(43);
+//		model.addAttribute("specimenDTO", specimenDTO);
+//		return "start";
+//	}
 	//this code is specific to the start html file, keeping it separate and duplicated from the root intentionally
 	@GetMapping("/start")
 	public String index(Model model) {
